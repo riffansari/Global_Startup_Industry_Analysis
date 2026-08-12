@@ -94,7 +94,7 @@ FROM startup_dataset
 GROUP BY industry
 ORDER BY early_stage_percentage DESC;
 
--- Growth Stage Startups
+-- MidGrowth Stage Startups
 
 SELECT industry,
     COUNT(*) AS total_startups,
@@ -134,7 +134,7 @@ FROM startup_dataset
 GROUP BY industry
 ORDER BY ipo_rate DESC;
 
--- Countries/Industries Rank in Startup Count, Funding and Valuation;
+-- Countries-Industries Rank in Startup Count, Funding and Valuation;
 
 WITH country_industry AS (
     SELECT industry, country,
